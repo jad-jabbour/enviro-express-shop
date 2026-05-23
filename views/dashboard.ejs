@@ -1,0 +1,3 @@
+<!DOCTYPE html><html lang="en"><head><%- include('partials/head', { title }) %></head><body><%- include('partials/header') %>
+<main class="page"><p class="eyebrow">Protected Route</p><h1>Dashboard</h1><p>Welcome <b><%= user %></b>. Your roles are: <%= roles.join(', ') %>.</p><a class="btn" href="/auth/logout">Logout</a></main>
+<%- include('partials/footer') %></body></html>

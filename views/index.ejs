@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"><head><%- include('partials/head', { title }) %></head><body>
+<%- include('partials/header') %>
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Environmental remediation • audits • sustainability</p>
+      <h1>Cleaner sites, smarter systems, greener business.</h1>
+      <p>Professional environmental services for companies that need cleanup, reporting, waste planning, and modern sustainability work.</p>
+      <div class="actions"><a class="btn" href="#services">View Services</a><a class="btn ghost" href="/contact">Request Consultation</a></div>
+    </div>
+    <div class="hero-card">
+      <span>Impact Score</span><strong>98%</strong><p>Projects delivered with documented safety and sustainability workflow.</p>
+    </div>
+  </section>
+  <section class="stats">
+    <div><strong>42+</strong><span>Sites assessed</span></div><div><strong>18k</strong><span>Kg waste redirected</span></div><div><strong>24/7</strong><span>Monitoring support</span></div>
+  </section>
+  <section id="services" class="section">
+    <p class="eyebrow">Services</p><h2>Built like a real Express MVC business website</h2>
+    <div class="cards">
+      <% services.forEach(service => { %>
+      <article class="card"><span><%= service.tag %></span><h3><%= service.name %></h3><p><%= service.description %></p><b><%= service.price %></b></article>
+      <% }) %>
+    </div>
+  </section>
+  <section class="section dark">
+    <p class="eyebrow">Projects</p><h2>Recent environmental improvement cases</h2>
+    <div class="project-list">
+      <% projects.forEach(project => { %>
+      <div><h3><%= project.title %></h3><p><%= project.location %></p><strong><%= project.impact %></strong></div>
+      <% }) %>
+    </div>
+  </section>
+</main><%- include('partials/footer') %>
+</body></html>

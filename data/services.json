@@ -1,0 +1,6 @@
+[
+  {"id":1,"name":"Site Remediation","tag":"Cleanup","price":"From $900","description":"Soil testing, waste removal planning, and safe restoration for polluted sites."},
+  {"id":2,"name":"Green Building Audit","tag":"Efficiency","price":"From $450","description":"Energy, water, and material use checks for offices and facilities."},
+  {"id":3,"name":"Waste Management Plan","tag":"Planning","price":"From $350","description":"Recycling systems, collection routes, and reporting plans for businesses."},
+  {"id":4,"name":"Water Quality Testing","tag":"Testing","price":"From $250","description":"Basic lab-ready sampling workflow for water safety and sustainability reports."}
+]
